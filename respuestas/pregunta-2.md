@@ -1,2 +1,2 @@
-MATCH (p:Persona {ciudad: 'Madrid'})
-RETURN p.nombre
+MATCH (p:Persona)-[:VIVE_EN]->(c:Ciudad {nombre: "Madrid"})
+RETURN p.nombre AS Nombre
